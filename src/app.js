@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 
 import { store } from './conf'
 import Counter from './components/Counter'
+import TabsExampleSimple from './components/TabsExampleSimple'
 import TestSnackbar from './components/TestSnackbar'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
@@ -16,7 +17,7 @@ const App = function()
     return (
         <MuiThemeProvider>
             <Provider store={store}>
-                <TestSnackbar name='Karl'></TestSnackbar>
+                <TabsExampleSimple></TabsExampleSimple>
             </Provider>
         </MuiThemeProvider>
     )
